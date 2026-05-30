@@ -62,7 +62,11 @@ const Header = () => {
         {/* Top Header Section (Hidden on Mobile) */}
         <div className="hidden lg:flex justify-between items-center px-8 py-5 border-b border-gray-100 max-w-7xl mx-auto w-full">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 group"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
             <img src="/logo.png" alt="Ramya Agencies" className="h-12 w-auto object-contain" />
           </Link>
 
@@ -107,7 +111,14 @@ const Header = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center h-[70px] w-full">
           
           {/* Mobile Logo (Visible only on mobile) */}
-          <Link to="/" className="flex items-center gap-2 lg:hidden px-4 group">
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 lg:hidden px-4 group"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              setIsMobileMenuOpen(false);
+            }}
+          >
             <img src="/logo.png" alt="Ramya Agencies" className="h-10 w-auto object-contain" />
           </Link>
 
@@ -131,12 +142,12 @@ const Header = () => {
             >
               Services
             </NavLink>
-            <a 
+            {/* <a 
               href="/#whychoose" 
               className={`font-medium transition-colors ${activeTab === 'whychoose' ? 'text-[#28A7FF]' : 'text-[#022B87] hover:text-[#28A7FF]'}`}
             >
               Why Choose Us
-            </a>
+            </a> */}
 
             <Link 
               to="/contact" 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Layout } from '../modules/layout/Layout'
+import ScrollToTop from './ScrollToTop'
 import {
   Home,
   AboutUs,
@@ -12,6 +13,7 @@ import {
 const AppRoutes = () => {
   return (
     <div className="min-h-screen flex flex-col relative z-10">
+       <ScrollToTop />
        <Routes>
             <Route element={<Layout/>}>
                 <Route path="/" element={<Home />} />

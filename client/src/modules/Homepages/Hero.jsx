@@ -17,7 +17,7 @@ const slides = [
     pretitle: "COMPLETE WATER SOLUTIONS",
     title: "Domestic & Commercial RO Systems",
     // description: "From home water purifiers to commercial RO plants, we deliver reliable purification solutions with expert technicians, genuine spare parts, and fast service support.",
-    primaryButtonText: "Explore Products",
+    primaryButtonText: "Explore Services",
     secondaryButtonText: "Get Free Consultation"
   }
 ];

@@ -27,28 +27,35 @@ const Contact = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-[#0B1F3A] py-16 lg:py-24 relative overflow-hidden">
-        {/* Background Decorative Blob */}
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-           <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#3DB7FF] rounded-full blur-3xl"></div>
-           <div className="absolute top-1/2 -left-24 w-64 h-64 bg-[#3DB7FF] rounded-full blur-3xl"></div>
+      {/* Top Banner Section */}
+      <section className="bg-gradient-to-r from-[#0B1F3A] to-[#123666] pt-24 pb-16 lg:pt-32 lg:pb-24 relative overflow-hidden">
+        {/* Background Decorative Blob & Wave */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+           <div className="absolute -top-32 -right-32 w-96 h-96 bg-[#3DB7FF] rounded-full blur-[100px]"></div>
+           <div className="absolute top-1/2 -left-32 w-80 h-80 bg-[#3DB7FF] rounded-full blur-[100px]"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mt-10 lg:mt-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center mt-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
             Contact Us
           </h1>
-          <p className="text-[#F5FBFF] text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90 leading-relaxed">
+          <p className="text-[#F5FBFF] text-base md:text-lg lg:text-xl max-w-4xl mx-auto mb-8 opacity-90 leading-relaxed font-medium">
             Get in touch with Ramya Agencies for trusted RO water purifier sales, installation, AMC, repair, and maintenance services across Vanur, Mailam, Panruti, Villupuram, and nearby areas.
           </p>
           
           {/* Breadcrumb */}
-          <div className="flex items-center justify-center gap-2 text-sm font-medium">
+          <div className="flex items-center justify-center gap-2 text-sm font-medium bg-white/10 w-fit mx-auto px-5 py-2.5 rounded-full backdrop-blur-md border border-white/10 shadow-lg">
             <Link to="/" className="text-white hover:text-[#3DB7FF] transition-colors">Home</Link>
             <ChevronRight className="w-4 h-4 text-gray-400" />
             <span className="text-[#3DB7FF]">Contact</span>
           </div>
+        </div>
+        
+        {/* Bottom Wave Divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-0 pointer-events-none rotate-180">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[40px] md:h-[60px] lg:h-[80px]">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="fill-[#F5FBFF]"></path>
+          </svg>
         </div>
       </section>
 
