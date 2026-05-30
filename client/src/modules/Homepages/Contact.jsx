@@ -39,8 +39,8 @@ const Contact = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Contact Us
           </h1>
-          <p className="text-[#F5FBFF] text-lg md:text-xl max-w-2xl mx-auto mb-8 opacity-90">
-            Reach out to our expert team for top-quality water purifier sales, reliable maintenance, and dedicated service support.
+          <p className="text-[#F5FBFF] text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90 leading-relaxed">
+            Get in touch with Ramya Agencies for trusted RO water purifier sales, installation, AMC, repair, and maintenance services across Vanur, Mailam, Panruti, Villupuram, and nearby areas.
           </p>
           
           {/* Breadcrumb */}
@@ -73,10 +73,12 @@ const Contact = () => {
                   <MapPin className="w-6 h-6 text-[#3DB7FF] group-hover:text-white transition-colors duration-300" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-[#0B1F3A] mb-1">Office Address</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Panruti,<br />Tamil Nadu
-                  </p>
+                  <h3 className="text-xl font-bold text-[#0B1F3A] mb-2">Office Address</h3>
+                  <div className="text-gray-600 leading-relaxed">
+                    <span className="font-semibold text-gray-800">Ramya Agencies</span><br />
+                    No: 33/1, Mailam Main Road,<br />
+                    Thiruchitrambalam, Tamil Nadu – 605111
+                  </div>
                 </div>
               </div>
 
@@ -86,8 +88,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1F3A] mb-1">Phone Number</h3>
-                  <a href="tel:+919876543210" className="text-gray-600 hover:text-[#3DB7FF] transition-colors block leading-relaxed">
-                    (+91) 98765 43210
+                  <a href="tel:+919786597966" className="text-gray-600 hover:text-[#3DB7FF] transition-colors block leading-relaxed font-medium">
+                    (+91) 97865 97966
                   </a>
                 </div>
               </div>
@@ -98,8 +100,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1F3A] mb-1">Email Address</h3>
-                  <a href="mailto:support@cigawater.com" className="text-gray-600 hover:text-[#3DB7FF] transition-colors block leading-relaxed">
-                    support@cigawater.com
+                  <a href="mailto:ramyaagenciesro@gmail.com" className="text-gray-600 hover:text-[#3DB7FF] transition-colors block leading-relaxed font-medium">
+                    ramyaagenciesro@gmail.com
                   </a>
                 </div>
               </div>
@@ -110,8 +112,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-[#0B1F3A] mb-1">Business Hours</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Mon - Sat : 9:00 AM - 8:00 PM
+                  <p className="text-gray-600 leading-relaxed font-medium">
+                    Mon – Sat : 9:00 AM – 8:00 PM
                   </p>
                 </div>
               </div>
@@ -119,9 +121,11 @@ const Contact = () => {
               {/* Mini CTA Section */}
               <div className="mt-4 bg-[#3DB7FF] rounded-2xl p-8 text-white relative overflow-hidden shadow-[0_10px_40px_rgba(61,183,255,0.3)]">
                  <MessageSquare className="absolute -bottom-4 -right-4 w-32 h-32 opacity-20" />
-                 <h3 className="text-2xl font-bold mb-2 relative z-10">Need Immediate Support?</h3>
-                 <p className="opacity-90 mb-6 relative z-10">Our technicians are on standby for emergency repairs.</p>
-                 <a href="tel:+919876543210" className="inline-block bg-[#0B1F3A] hover:bg-gray-900 text-white font-medium px-6 py-3 rounded-lg transition-colors relative z-10 shadow-lg">
+                 <h3 className="text-2xl font-bold mb-2 relative z-10">Need Immediate RO Service?</h3>
+                 <p className="opacity-90 mb-6 relative z-10 text-sm md:text-base leading-relaxed">
+                   Our expert technicians are ready to provide fast and reliable RO repair, installation, and maintenance support.
+                 </p>
+                 <a href="tel:+919786597966" className="inline-block bg-[#0B1F3A] hover:bg-gray-900 text-white font-medium px-6 py-3 rounded-lg transition-colors relative z-10 shadow-lg hover:-translate-y-0.5 duration-300">
                    Call Us Now
                  </a>
               </div>
@@ -194,12 +198,15 @@ const Contact = () => {
                         required
                         className="w-full px-5 py-4 bg-[#F5FBFF] border border-transparent rounded-xl focus:bg-white focus:border-[#3DB7FF] focus:ring-2 focus:ring-[#3DB7FF]/20 transition-all outline-none text-gray-700 appearance-none cursor-pointer"
                       >
-                        <option value="" disabled>Select a service</option>
-                        <option value="Water Purifier Sales">Water Purifier Sales</option>
-                        <option value="Installation Service">Installation Service</option>
-                        <option value="AMC Service">AMC Service</option>
-                        <option value="Repair Service">Repair Service</option>
-                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="" disabled>Select a Service</option>
+                        <option value="RO Installation">RO Installation</option>
+                        <option value="RO Service">RO Service</option>
+                        <option value="RO AMC">RO AMC</option>
+                        <option value="RO Repair">RO Repair</option>
+                        <option value="Filter Replacement">Filter Replacement</option>
+                        <option value="Commercial RO System">Commercial RO System</option>
+                        <option value="Water Softener">Water Softener</option>
+                        <option value="Other">Other</option>
                       </select>
                       <ChevronDown className="absolute right-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" />
                     </div>
@@ -216,7 +223,7 @@ const Contact = () => {
                       required
                       rows="5"
                       className="w-full px-5 py-4 bg-[#F5FBFF] border border-transparent rounded-xl focus:bg-white focus:border-[#3DB7FF] focus:ring-2 focus:ring-[#3DB7FF]/20 transition-all outline-none text-gray-700 placeholder-gray-400 resize-none"
-                      placeholder="How can we help you today?"
+                      placeholder="Tell us your service requirement..."
                     ></textarea>
                   </div>
 
@@ -240,6 +247,12 @@ const Contact = () => {
       {/* Embedded Google Map */}
       <section className="pb-16 lg:pb-24 bg-[#F5FBFF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F3A] mb-4">Visit Our Location</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
+              Visit Ramya Agencies for trusted multi brand RO water purifier sales and service solutions in Tamil Nadu.
+            </p>
+          </div>
           <div className="h-[400px] lg:h-[500px] w-full relative rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(11,31,58,0.08)] border border-gray-100 group">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.77531783478!2d79.5446!3d11.7753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a54b39b55555555%3A0x8888888888888888!2sPanruti%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 

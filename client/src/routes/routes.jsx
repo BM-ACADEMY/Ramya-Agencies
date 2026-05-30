@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Layout } from '../modules/layout/Layout'
 import {
   Home,
-  AboutPage,
+  AboutUs,
   ServicesPage,
   WhyChoosePage,
   ContactPage
@@ -15,7 +15,7 @@ const AppRoutes = () => {
        <Routes>
             <Route element={<Layout/>}>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<AboutPage />} />
+                <Route path="/about" element={<AboutUs />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/why-choose-us" element={<WhyChoosePage />} />
                 <Route path="/contact" element={<ContactPage />} />

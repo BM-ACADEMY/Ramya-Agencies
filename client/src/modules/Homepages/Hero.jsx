@@ -6,13 +6,19 @@ import ramya2 from '../../assets/ramya2.png';
 const slides = [
   {
     image: ramya1,
-    pretitle: "Efficient and Effective",
-    title: "WATER PURIFIERS"
+    pretitle: "PURE WATER. TRUSTED SERVICE.",
+    title: "Multi Brand RO Water Purifier Sales & Service",
+    // description: "Ramya Agencies provides trusted RO sales, installation, AMC, repair, and maintenance services for homes and businesses across Vanur, Mailam, Villupuram & nearby areas.",
+    primaryButtonText: "Book RO Service",
+    secondaryButtonText: "Contact Sales"
   },
   {
     image: ramya2,
-    pretitle: "Advanced Technology",
-    title: "MINERAL RO PURIFIER"
+    pretitle: "COMPLETE WATER SOLUTIONS",
+    title: "Domestic & Commercial RO Systems",
+    // description: "From home water purifiers to commercial RO plants, we deliver reliable purification solutions with expert technicians, genuine spare parts, and fast service support.",
+    primaryButtonText: "Explore Products",
+    secondaryButtonText: "Get Free Consultation"
   }
 ];
 
@@ -82,14 +88,25 @@ const Hero = () => {
         {/* Left Typography */}
         <div 
           key={`text-${currentSlide}`}
-          className="flex-1 text-center md:text-left mt-16 md:mt-0 flex flex-col items-center md:items-start pl-0 md:pl-12 lg:pl-20 animate-in fade-in slide-in-from-bottom-4 duration-700"
+          className="flex-1 text-center md:text-left mt-8 md:mt-0 md:-translate-y-6 flex flex-col items-center md:items-start pl-0 md:pl-12 lg:pl-20 animate-in fade-in slide-in-from-bottom-4 duration-700"
         >
-          <h2 className="text-[#1A1A1A] text-lg md:text-xl lg:text-3xl tracking-wide uppercase font-medium mb-2 md:mb-3">
+          <h2 className="text-[#1A1A1A] text-sm md:text-base lg:text-lg tracking-wider uppercase font-semibold mb-2 md:mb-3">
             {slides[currentSlide].pretitle}
           </h2>
-          <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-extrabold tracking-tight leading-[1.1]">
+          <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-tight leading-[1.1] mb-3 md:mb-4">
             {slides[currentSlide].title}
           </h1>
+          <p className="text-gray-800 text-sm md:text-base lg:text-lg max-w-xl mb-5 md:mb-6 leading-relaxed">
+            {slides[currentSlide].description}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center md:justify-start">
+            <button className="bg-[#0A2540] text-white px-6 md:px-8 py-3 rounded-md font-medium hover:bg-[#123b61] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+              {slides[currentSlide].primaryButtonText}
+            </button>
+            <button className="bg-transparent text-[#0A2540] border-2 border-[#0A2540] px-6 md:px-8 py-3 rounded-md font-medium hover:bg-[#0A2540] hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+              {slides[currentSlide].secondaryButtonText}
+            </button>
+          </div>
         </div>
 
         {/* Right Product Image */}

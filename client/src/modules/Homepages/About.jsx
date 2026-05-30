@@ -1,142 +1,96 @@
 import React from 'react';
-import { Check, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ramya3 from '../../assets/ramya3.png';
 
 const About = () => {
   return (
-    <section id="about" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+    <section id="about" className="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
-        {/* --- Left Column: Image Composition --- */}
-        <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[600px]">
-          
-          {/* Main Background Image (Right/Bottom aligned) */}
+        {/* --- Left Column: Single Large Image --- */}
+        <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-2xl group">
           <img 
             src={ramya3} 
-            alt="Water bottle filling process" 
-            className="absolute right-0 bottom-0 w-[80%] h-[90%] object-cover bg-gray-200"
+            alt="RO Installation and Service" 
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-
-
-
-          {/* Floating Trust Badge */}
-          <div className="absolute left-[5%] top-[5%] z-20 bg-[#022B87] text-white p-6 w-[130px] h-[130px] flex flex-col items-center justify-center shadow-lg">
-            <span className="text-4xl font-bold flex items-start">
-              18<span className="text-xl mt-1">+</span>
-            </span>
-            <span className="text-xs text-center leading-snug mt-1">
-              Years<br />Experience
-            </span>
-          </div>
+          {/* Optional: Subtle gradient overlay to make it look premium */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
         </div>
 
-        {/* --- Right Column: Content & Features --- */}
+        {/* --- Right Column: All Content --- */}
         <div className="flex flex-col">
           
-          {/* Section Kicker */}
-          <span className="text-[#28A7FF] font-semibold text-base mb-2">
+          {/* Heading & Intro */}
+          <h2 className="text-[#022B87] text-4xl sm:text-5xl font-serif font-bold mb-6">
             About Us
-          </span>
-
-          {/* Main Headline */}
-          <h2 className="text-[#022B87] text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.2] mb-5">
-            Healthy Mineral Water for You & Your Family
           </h2>
-
-          {/* Intro Paragraph */}
-          <p className="text-[#8A8A8A] text-sm sm:text-base leading-relaxed mb-8">
-            With over 18 years of dedicated experience in the water purifier industry, we have built our reputation on trusted service and unwavering customer satisfaction. We are committed to delivering premium, safe, and hygienic drinking water solutions for your home and business.
+          <p className="text-gray-600 text-base leading-relaxed mb-6">
+            With over 18+ years of experience, Ramya Agencies provides trusted RO sales, installation, AMC, and water purifier service. We specialize in multi-brand RO service, filter replacement, and commercial water purification solutions with reliable customer support and expert technicians.
           </p>
-
-          {/* Branches Section */}
-          <div className="mb-8">
-            <h3 className="text-[#022B87] font-bold text-lg mb-4 flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-[#28A7FF]" />
-              Our 2 Branches
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white border border-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-[#28A7FF] text-xs font-bold uppercase tracking-wider mb-1 block">Branch 1</span>
-                <h4 className="text-[#022B87] font-bold text-lg mb-1">CIGA</h4>
-                <p className="text-[#8A8A8A] text-sm flex items-center gap-1.5 mt-2 font-medium">
-                  <MapPin className="w-4 h-4 text-[#28A7FF]" /> Panruti
-                </p>
-              </div>
-              <div className="bg-white border border-gray-100 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <span className="text-[#28A7FF] text-xs font-bold uppercase tracking-wider mb-1 block">Branch 2</span>
-                <h4 className="text-[#022B87] font-bold text-lg mb-1">Ramya Agencies</h4>
-                <p className="text-[#8A8A8A] text-sm flex items-center gap-1.5 mt-2 font-medium">
-                  <MapPin className="w-4 h-4 text-[#28A7FF]" /> Panruti
-                </p>
-              </div>
-            </div>
+          
+          {/* Service Locations */}
+          <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-gray-700 mb-10 border-b border-gray-100 pb-8">
+            <span className="flex items-center gap-1">
+              <MapPin className="w-4 h-4 text-[#28A7FF]" /> Mailam
+            </span>
+            <span className="flex items-center gap-1">
+              <MapPin className="w-4 h-4 text-[#28A7FF]" /> Panruti
+            </span>
+            <span className="flex items-center gap-1">
+              <MapPin className="w-4 h-4 text-[#28A7FF]" /> Vanur
+            </span>
+            <span className="flex items-center gap-1">
+              <MapPin className="w-4 h-4 text-[#28A7FF]" /> Villupuram
+            </span>
           </div>
 
-          {/* 2x2 Features Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-6 mb-10">
+          {/* Features (2x2 Grid, Numbers Removed) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 mb-10">
             
-            {/* Feature 1 */}
+            {/* Item 1 */}
             <div className="flex flex-col">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-[#28A7FF] w-6 h-6 rounded-full flex items-center justify-center shrink-0">
-                  <Check className="text-white w-4 h-4 stroke-[3]" />
-                </div>
-                <h3 className="text-[#022B87] font-bold text-base">Hygienic Mineral water</h3>
-              </div>
-              <p className="text-[#8A8A8A] text-sm leading-relaxed pl-9">
-                Ensuring the highest standards of purity and safety in every drop.
+              <h3 className="text-gray-900 font-bold text-lg mb-1">Multi Brand RO</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Sales and service support for leading RO water purifier brands.
               </p>
             </div>
 
-            {/* Feature 2 */}
+            {/* Item 2 */}
             <div className="flex flex-col">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-[#28A7FF] w-6 h-6 rounded-full flex items-center justify-center shrink-0">
-                  <Check className="text-white w-4 h-4 stroke-[3]" />
-                </div>
-                <h3 className="text-[#022B87] font-bold text-base">Water Bottle Delivery</h3>
-              </div>
-              <p className="text-[#8A8A8A] text-sm leading-relaxed pl-9">
-                Prompt and reliable delivery service right to your doorstep.
+              <h3 className="text-gray-900 font-bold text-lg mb-1">Expert Install</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Professional installation for residential and commercial systems.
               </p>
             </div>
 
-            {/* Feature 3 */}
+            {/* Item 3 */}
             <div className="flex flex-col">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-[#28A7FF] w-6 h-6 rounded-full flex items-center justify-center shrink-0">
-                  <Check className="text-white w-4 h-4 stroke-[3]" />
-                </div>
-                <h3 className="text-[#022B87] font-bold text-base">Water Filtration</h3>
-              </div>
-              <p className="text-[#8A8A8A] text-sm leading-relaxed pl-9">
-                Advanced RO and UV filtration systems for ultimate protection.
+              <h3 className="text-gray-900 font-bold text-lg mb-1">AMC & Maintenance</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Reliable AMC, filter replacement, and periodic maintenance.
               </p>
             </div>
 
-            {/* Feature 4 */}
+            {/* Item 4 */}
             <div className="flex flex-col">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="bg-[#28A7FF] w-6 h-6 rounded-full flex items-center justify-center shrink-0">
-                  <Check className="text-white w-4 h-4 stroke-[3]" />
-                </div>
-                <h3 className="text-[#022B87] font-bold text-base">Water Refilling</h3>
-              </div>
-              <p className="text-[#8A8A8A] text-sm leading-relaxed pl-9">
-                Eco-friendly and convenient refilling stations for your daily needs.
+              <h3 className="text-gray-900 font-bold text-lg mb-1">Fast Support</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Quick response and trusted after-sales service for all needs.
               </p>
             </div>
 
           </div>
 
           {/* CTA Button */}
-          <div>
-            <a 
-              href="#about" 
-              className="inline-block bg-[#28A7FF] hover:bg-[#022B87] text-white font-medium px-8 py-3.5 rounded-full transition-colors duration-300"
+          <div className="mt-2">
+            <Link 
+              to="/about"
+              className="inline-block bg-[#022B87] text-white font-medium px-8 py-3.5 rounded-md shadow-[0_8px_20px_rgba(2,43,135,0.2)] hover:shadow-[0_12px_25px_rgba(2,43,135,0.3)] hover:bg-[#28A7FF] hover:-translate-y-0.5 transition-all duration-300"
             >
-              More About Us
-            </a>
+              Learn More About Us
+            </Link>
           </div>
 
         </div>

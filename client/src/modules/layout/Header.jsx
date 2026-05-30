@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Phone, Mail, ChevronDown, Droplet, Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const InstagramIcon = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -119,12 +119,18 @@ const Header = () => {
             >
               Home
             </a>
-            <a 
-              href="/#about" 
+            <Link 
+              to="/about" 
               className={`font-medium transition-colors ${activeTab === 'about' ? 'text-[#28A7FF]' : 'text-[#022B87] hover:text-[#28A7FF]'}`}
             >
               About Us
-            </a>
+            </Link>
+            <NavLink 
+              to="/services" 
+              className={({ isActive }) => `font-medium transition-all duration-300 relative ${isActive || activeTab === 'services' ? 'text-[#3DB7FF] font-semibold after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-[#3DB7FF] after:rounded-full' : 'text-[#022B87] hover:text-[#28A7FF]'}`}
+            >
+              Services
+            </NavLink>
             <a 
               href="/#whychoose" 
               className={`font-medium transition-colors ${activeTab === 'whychoose' ? 'text-[#28A7FF]' : 'text-[#022B87] hover:text-[#28A7FF]'}`}
@@ -174,13 +180,20 @@ const Header = () => {
             >
               Home
             </a>
-            <a 
-              href="/#about" 
+            <Link 
+              to="/about" 
               className={`font-medium transition-colors text-lg ${activeTab === 'about' ? 'text-[#28A7FF]' : 'text-[#022B87] hover:text-[#28A7FF]'}`} 
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About Us
-            </a>
+            </Link>
+            <NavLink 
+              to="/services" 
+              className={({ isActive }) => `font-medium transition-all duration-300 text-lg ${isActive || activeTab === 'services' ? 'text-[#3DB7FF] font-semibold' : 'text-[#022B87] hover:text-[#28A7FF]'}`} 
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Services
+            </NavLink>
             <a 
               href="/#whychoose" 
               className={`font-medium transition-colors text-lg ${activeTab === 'whychoose' ? 'text-[#28A7FF]' : 'text-[#022B87] hover:text-[#28A7FF]'}`} 

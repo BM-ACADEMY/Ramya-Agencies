@@ -16,12 +16,12 @@ const WhyChooseUs = () => {
         
         {/* Main Heading */}
         <div className="text-center mb-16 lg:mb-20">
-          <span className="text-[#28A7FF] font-semibold text-base uppercase tracking-wider mb-2 block">Our Advantages</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#022B87] leading-tight">
-            Why Choose Our Water Solutions?
+          <span className="text-[#28A7FF] font-semibold text-base uppercase tracking-wider mb-2 block">Why Choose Us</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#022B87] leading-tight mb-4">
+            Why Choose Ramya Agencies for RO Water Solutions?
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-            Delivering healthy, safe, and crystal-clear drinking water with advanced purification technology and unwavering commitment to quality.
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+            We provide reliable RO water purifier sales, installation, AMC, and repair services with advanced purification technology, expert technicians, and trusted customer support across Vanur, Mailam, Villupuram, and nearby areas.
           </p>
         </div>
 
@@ -32,68 +32,68 @@ const WhyChooseUs = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
             
             {/* Feature 1 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <Droplet className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold text-[#022B87] mb-2">Pure & Safe Drinking Water</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Experience the highest standard of water purity, completely free from harmful contaminants.
+                High-quality RO purification solutions designed to deliver clean, safe, and healthy drinking water for your home and business.
               </p>
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <Settings className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-[#022B87] mb-2">Advanced Filtration</h3>
+              <h3 className="text-xl font-bold text-[#022B87] mb-2">Advanced RO Filtration</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                State-of-the-art RO and UV technology engineered for optimal water treatment.
+                Modern RO, UV, and UF purification systems engineered for effective water filtration and long-lasting performance.
               </p>
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <ShieldCheck className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-[#022B87] mb-2">18+ Years Trusted</h3>
+              <h3 className="text-xl font-bold text-[#022B87] mb-2">18+ Years Trusted Service</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                A proven legacy of reliability and excellence in the water purification industry.
+                Over 18 years of experience delivering dependable RO sales, service, and customer satisfaction.
               </p>
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <Wrench className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-[#022B87] mb-2">Fast Installation</h3>
+              <h3 className="text-xl font-bold text-[#022B87] mb-2">Fast Installation Support</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Quick, hassle-free setup and responsive support from our expert technicians.
+                Quick and professional RO installation services with hassle-free setup by experienced technicians.
               </p>
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <Tag className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-[#022B87] mb-2">Affordable AMC</h3>
+              <h3 className="text-xl font-bold text-[#022B87] mb-2">Affordable AMC Plans</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Cost-effective annual maintenance contracts to keep your systems running perfectly.
+                Cost-effective AMC and maintenance services to keep your water purifier running efficiently throughout the year.
               </p>
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group">
+            <div className="bg-white rounded-xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgba(31,131,240,0.1)] transition-all duration-300 border border-gray-100 group hover:-translate-y-1">
               <div className="w-14 h-14 rounded-full bg-[#EEF5FF] flex items-center justify-center mb-5 group-hover:bg-[#1F83F0] transition-colors duration-300">
                 <Smile className="w-7 h-7 text-[#1F83F0] group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-[#022B87] mb-2">100% Satisfaction</h3>
+              <h3 className="text-xl font-bold text-[#022B87] mb-2">100% Customer Satisfaction</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Dedicated to exceeding your expectations with every service we provide.
+                Dedicated after-sales support and reliable service focused on quality, trust, and long-term customer relationships.
               </p>
             </div>
 
@@ -118,16 +118,15 @@ const WhyChooseUs = () => {
                   <ShieldCheck className="w-6 h-6 text-white" strokeWidth={2} />
                 </div>
                 <div>
-                  <div className="text-xl font-bold text-[#022B87]">ISO 9001</div>
-                  <div className="text-sm text-gray-500 font-medium">Certified Quality</div>
+                  <div className="text-xl font-bold text-[#022B87]">ISO Quality Service</div>
                 </div>
               </div>
 
               {/* Floating Trust Badge */}
               <div className="absolute -top-6 -right-6 md:-top-8 md:-right-8 z-20 bg-[#28A7FF] text-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-in slide-in-from-top-4 duration-700 delay-150">
                 <div className="flex flex-col text-right">
-                  <div className="text-2xl font-bold leading-none">18+</div>
-                  <div className="text-xs font-medium uppercase tracking-wider opacity-90 mt-1">Years</div>
+                  <div className="text-xl font-bold leading-none">18+ Years</div>
+                  <div className="text-xs font-medium uppercase tracking-wider opacity-90 mt-1">Experience</div>
                 </div>
               </div>
 
